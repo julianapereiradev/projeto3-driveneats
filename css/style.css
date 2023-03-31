@@ -58,14 +58,14 @@ body {
   margin-bottom: 30px;
 }
 
-.row-caixas {
+.row-caixas-pratos, .row-caixas-bebidas ,.row-caixas-sobremesas {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   white-space: nowrap;
 }
 
-.caixa {
+.caixa-zero, .caixa-um, .caixa-dois, .caixa-tres, .caixa-quatro, .caixa-cinco, .caixa-seis, .caixa-sete, .caixa-oito {
   display: flex;
   flex-direction: column;
   border-radius: 9px;
@@ -78,7 +78,7 @@ body {
 
 }
 
-.caixa>div {
+.margin-y {
 margin-bottom: 5px;
 margin-top: 5px;
 }
@@ -99,6 +99,11 @@ margin-top: 5px;
   color: #000000;
   font-size: 16px;
 }
+
+.selecionado {
+  border: 5px solid #32B72F;
+}
+
 
 .footer {
   display: flex;
