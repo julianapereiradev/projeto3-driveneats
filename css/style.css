@@ -102,6 +102,11 @@ margin-top: 5px;
 
 .selecionado {
   border: 5px solid #32B72F;
+  background: url('../img/checkmark-circle.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: 130px;
+  background-position-y: 175px;
 }
 
 
