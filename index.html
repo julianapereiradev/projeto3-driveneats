@@ -27,7 +27,7 @@
         <div class="conteudo">
             <div class="categorias">Primeiro, seu prato</div>
             <div class="row-caixas-pratos">
-                    <div class="caixa-zero" onclick="selecionarPrato('.caixa-zero')" data-test="dish"> 
+                    <div class="caixa-zero" onclick="selecionarPrato(this)" data-test="dish"> 
                         <img src="./img/frango_yin_yang.png" alt="" style="width: 100%;">
                         <div class="caixa-titulo margin-y" data-test="item-name">Frango Yin Yang</div>
                         <div class="caixa-subtitulo margin-y">Um pouco de batata</div>
@@ -35,7 +35,7 @@
                         <div class="caixa-preco margin-y" data-test="item-price">R$14,90</div>
                     </div>
 
-                <div class="caixa-um" onclick="selecionarPrato('.caixa-um')" data-test="dish">
+                <div class="caixa-um" onclick="selecionarPrato(this)" data-test="dish">
                     <img src="./img/frango_yin_yang.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Frango Yin Yang</div>
                     <div class="caixa-subtitulo margin-y">Um pouco de batata</div>
@@ -43,7 +43,7 @@
                     <div class="caixa-preco margin-y" data-test="item-price">R$14,80</div>
                 </div>
 
-                <div class="caixa-dois" onclick="selecionarPrato('.caixa-dois')" data-test="dish">
+                <div class="caixa-dois" onclick="selecionarPrato(this)" data-test="dish">
                     <img src="./img/frango_yin_yang.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Frango Yin Yang</div>
                     <div class="caixa-subtitulo margin-y">Um pouco de batata</div>
@@ -59,21 +59,21 @@
         <div class="conteudo">
             <div class="categorias">Agora, sua bebida</div>
             <div class="row-caixas-bebidas">
-                <div class="caixa-tres" onclick="selecionarBebida('.caixa-tres')" data-test="drink" >
+                <div class="caixa-tres" onclick="selecionarBebida(this)" data-test="drink" >
                     <img src="./img/coca-cola.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Coquinha gelada</div>
                     <div class="caixa-subtitulo margin-y">Lata 350ml</div>
                     <div class="caixa-subtitulo margin-y">&nbsp;</div>
                     <div class="caixa-preco margin-y" data-test="item-price">R$ 4,60</div>
                 </div>
-                <div class="caixa-quatro" onclick="selecionarBebida('.caixa-quatro')" data-test="drink" >
+                <div class="caixa-quatro" onclick="selecionarBebida(this)" data-test="drink" >
                     <img src="./img/coca-cola.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Coquinha gelada</div>
                     <div class="caixa-subtitulo margin-y">Lata 350ml</div>
                     <div class="caixa-subtitulo margin-y">&nbsp;</div>
                     <div class="caixa-preco margin-y" data-test="item-price">R$ 4,50</div>
                 </div>
-                <div class="caixa-cinco" onclick="selecionarBebida('.caixa-cinco')" data-test="drink" >
+                <div class="caixa-cinco" onclick="selecionarBebida(this)" data-test="drink" >
                     <img src="./img/coca-cola.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Coquinha gelada</div>
                     <div class="caixa-subtitulo margin-y">Lata 350ml</div>
@@ -86,21 +86,21 @@
         <div class="conteudo">
             <div class="categorias">Por fim, sua sobremesa</div>
             <div class="row-caixas-sobremesas">
-                <div class="caixa-seis"  onclick="selecionarSobremesa('.caixa-seis')" data-test="dessert">
+                <div class="caixa-seis"  onclick="selecionarSobremesa(this)" data-test="dessert">
                     <img src="./img/pudim.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Pudim</div>
                     <div class="caixa-subtitulo margin-y">Apenas pudim</div>
                     <div class="caixa-subtitulo margin-y">&nbsp;</div>
                     <div class="caixa-preco margin-y" data-test="item-price">R$ 7,80</div>
                 </div>
-                <div class="caixa-sete" onclick="selecionarSobremesa('.caixa-sete')" data-test="dessert">
+                <div class="caixa-sete" onclick="selecionarSobremesa(this)" data-test="dessert">
                     <img src="./img/pudim.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Pudim</div>
                     <div class="caixa-subtitulo margin-y">Apenas pudim</div>
                     <div class="caixa-subtitulo margin-y">&nbsp;</div>
                     <div class="caixa-preco margin-y" data-test="item-price">R$ 7,90</div>
                 </div>
-                <div class="caixa-oito" onclick="selecionarSobremesa('.caixa-oito')" data-test="dessert">
+                <div class="caixa-oito" onclick="selecionarSobremesa(this)" data-test="dessert">
                     <img src="./img/pudim.png" alt="">
                     <div class="caixa-titulo margin-y" data-test="item-name">Pudim</div>
                     <div class="caixa-subtitulo margin-y">Apenas pudim</div>
@@ -112,7 +112,7 @@
     </div>
 
     <div class="footer">
-        <button data-test="order-btn">
+        <button disabled class="botao-continuar" data-test="order-btn">
             <p>Selecione os 3 itens para fechar o pedido</p>
         </button>
     </div>

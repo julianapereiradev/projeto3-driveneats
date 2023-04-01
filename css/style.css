@@ -107,8 +107,12 @@ margin-top: 5px;
   background-size: 30px;
   background-position-x: 130px;
   background-position-y: 175px;
+  background-color: #FFFFFF;
 }
 
+.continuar {
+  background-color: #32B72F;
+}
 
 .footer {
   display: flex;
@@ -122,18 +126,29 @@ margin-top: 5px;
   left: 0;
 }
 
-.footer button {
-  background-color: #CBCBCB;
+/* button {
+  background-color: #cbcbcb;
   color: #ffffff;
   border: none;
   border-radius: 50px;
   height: 60px;
   margin: 0 30px;
-}
+} */
 
 .footer button p {
-  color: #ffffff;
+  /* color: #000000;
   font-size: 20px;
   font-weight: 400;
-  margin: 0 50px
+  margin: 0 50px */
+}
+
+.botao-continuar {
+  /* color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 30px;
+  border-radius: 50px;
+  height: 60px;
+  width: 100%; */
+
 }
