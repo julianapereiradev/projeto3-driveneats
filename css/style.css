@@ -87,6 +87,7 @@ margin-top: 5px;
   color: #333333;
   font-size: 16px;
   font-weight: bold;
+  margin-top: 10px;
 
 }
 
@@ -112,6 +113,15 @@ margin-top: 5px;
 
 .continuar {
   background-color: #32B72F;
+
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  margin: 0 30px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+
 }
 
 .footer {
@@ -126,29 +136,14 @@ margin-top: 5px;
   left: 0;
 }
 
-/* button {
-  background-color: #cbcbcb;
+.botao-continuar {
+  font-size: 18px;
+  width: 100%;
+  border-radius: 50px;
+  margin: 0 30px;
+  height: 60px;
+  font-weight: 400;
   color: #ffffff;
   border: none;
-  border-radius: 50px;
-  height: 60px;
-  margin: 0 30px;
-} */
-
-.footer button p {
-  /* color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0 50px */
-}
-
-.botao-continuar {
-  /* color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0 30px;
-  border-radius: 50px;
-  height: 60px;
-  width: 100%; */
-
+  background-color: #cbcbcb;
 }
