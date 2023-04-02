@@ -86,7 +86,11 @@ function selecionarSobremesa(botao) {
 
 
 function pedidoCompleto() {
-    const resposta = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato} \n - Bebida: ${nomeBebida}  \n - Sobremesa: ${nomeSobremesa}  \n Total: ${(precoPrato + precoBebida + precoSobremesa).toFixed(2)}`
+    const total = (precoPrato + precoBebida + precoSobremesa)
+    const duasCasasDecimais = Math.round(total * 1e2) / 1e2
+    const totalPTBR = duasCasasDecimais.toLocaleString('pt-BR')
+
+    const resposta = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomePrato} \n - Bebida: ${nomeBebida}  \n - Sobremesa: ${nomeSobremesa}  \n Total: R$ ${totalPTBR}`
 
     texto = window.encodeURIComponent(resposta)
 
