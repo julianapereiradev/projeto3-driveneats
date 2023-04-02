@@ -29,10 +29,12 @@ function verificaSelecao() {
 function selecionarPrato(botao) {
 
     nomePrato = botao.querySelector('.caixa-titulo').innerHTML
-
+    
     let stringPrecoPrato = botao.querySelector('.caixa-preco').innerHTML
+    
+    stringPrecoPrato = stringPrecoPrato.replace(",",".")
 
-    precoPrato = precoPrato + Number(stringPrecoPrato)
+    precoPrato = Number(stringPrecoPrato)
 
     const botaoSelecionadoAnteriormente = document.querySelector('.row-caixas-pratos .selecionado')
 
@@ -48,10 +50,12 @@ function selecionarPrato(botao) {
 function selecionarBebida(botao) {
 
     nomeBebida = botao.querySelector('.caixa-titulo').innerHTML
-
+    
     let stringPrecoBebida = botao.querySelector('.caixa-preco').innerHTML
 
-    precoBebida = precoBebida + Number(stringPrecoBebida)
+    stringPrecoBebida = stringPrecoBebida.replace(",",".")
+    
+    precoBebida = Number(stringPrecoBebida)
 
     const botaoSelecionadoAnteriormente = document.querySelector('.row-caixas-bebidas .selecionado')
 
@@ -71,7 +75,9 @@ function selecionarSobremesa(botao) {
 
     let stringPrecoSobremesa = botao.querySelector('.caixa-preco').innerHTML
 
-    precoSobremesa = precoSobremesa + Number(stringPrecoSobremesa)
+    stringPrecoSobremesa = stringPrecoSobremesa.replace(",",".")
+    
+    precoSobremesa = Number(stringPrecoSobremesa)
 
     const botaoSelecionadoAnteriormente = document.querySelector('.row-caixas-sobremesas .selecionado')
    
