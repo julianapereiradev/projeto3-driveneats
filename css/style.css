@@ -7,6 +7,97 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.726);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #50D074;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+}
+
+.titulo-confirme {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.linha-confirme-prato,
+.linha-confirme-bebida,
+.linha-confirme-sobremesa,
+.linha-confirme-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nome-prato-confirme,
+.preco-prato-confirme,
+.nome-bebida-confirme,
+.preco-bebida-confirme,
+.nome-sobremesa-confirme,
+.preco-sobremesa-confirme,
+.nome-total-confirme,
+.preco-total-confirme {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.nome-total-confirme, .preco-total-confirme {
+  font-weight: bold;
+}
+
+.botao-confirmar {
+  width: 100%;
+  color: #50D074;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border: none;
+  height: 40px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+
+/* The Close Button */
+.close {
+  width: 100%;
+  font-size: 22px;
+  border: none;
+  background-color: #50D074;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: left;
@@ -58,14 +149,24 @@ body {
   margin-bottom: 30px;
 }
 
-.row-caixas-pratos, .row-caixas-bebidas ,.row-caixas-sobremesas {
+.row-caixas-pratos,
+.row-caixas-bebidas,
+.row-caixas-sobremesas {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   white-space: nowrap;
 }
 
-.caixa-zero, .caixa-um, .caixa-dois, .caixa-tres, .caixa-quatro, .caixa-cinco, .caixa-seis, .caixa-sete, .caixa-oito {
+.caixa-zero,
+.caixa-um,
+.caixa-dois,
+.caixa-tres,
+.caixa-quatro,
+.caixa-cinco,
+.caixa-seis,
+.caixa-sete,
+.caixa-oito {
   display: flex;
   flex-direction: column;
   border-radius: 9px;
@@ -79,8 +180,8 @@ body {
 }
 
 .margin-y {
-margin-bottom: 5px;
-margin-top: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .caixa-titulo {
